@@ -1,0 +1,213 @@
+<html>
+
+<head>
+    <!--Primeiro passa realizar importações
+    Bootstrap e depois bootstrap cdn para os icons
+
+    -->
+    <title>Agencia website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/af090529c7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!--Segundo passo Nav bar, vai la no bootstrap e copia e cola, 
+    remove disable, tira algumas coisas 
+    no ul colocar ml-auto
+    e vai pro css
+
+    3 passo coloca a imagem na linha 27 no lugar de navbar, pega a classe navbar-brand e volta pro css pra dar uma diminuida
+
+    4 passo pega a navbar-nav pra estilizar as fontes da navbar e vai pro css
+
+    exlcui o icone span e coloca o novo do font awesome de barra la
+
+    5 copia a classe do icone fa-bars e taca css
+    
+    6 passo vai pra navbar toogler e copia ela pra estilizar
+--> 
+<section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="d-flex"></div>
+          <a class="navbar-brand" href="#"><img src="images/demo-logo.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TESTIMONILAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+</section>
+
+
+<!--
+    7 passo cria tudo as div e a section até a primiera col md-6 e o a assista os videos
+
+    depois cria a proxima que é a home2.png
+
+    depos a img src= waves1
+
+  -->
+
+<section id="banner">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+        <p class="promo-title">Melhor agencia de todas!</p>
+        <p>Aqui voce encontra os melhores preços de toda sua região! Confia e vem com a gente!</p>
+        <a href="#"><img src="images/play.png" class="play-btn">Assista os videos!</a>
+    </div>
+
+    <div class="col-md-6 text-center">
+      <img src="images/home2.png" class="img-fuid">
+
+    </div>
+
+  </div>
+</div>
+
+<img src="images/wave1.png" class="bottom-img">
+
+</section>
+
+
+<!--
+
+
+-->
+<section id="services">
+<div class="container">
+  <h1 class="title text-center">O QUE FAZEMOS?</h1> <!--Cria a classe titulo para colocar uma linhazinha em cima-->
+    <div class="row text-center">
+        <div class="col-md-4 services">
+          <img src="images/service1.png" class="service-img">
+          <h4>Marketing acelerado!</h4>
+          <p>Aqui voce encontra os melhores preços de toda sua região! Confia e vem com a gente!</p>
+        </div>
+
+        <div class="col-md-4 services">
+          <img src="images/service2.png" class="service-img">
+          <h4>Tudo de Online</h4>
+          <p>Aqui voce encontra os melhores preços de toda sua região! Confia e vem com a gente!</p>
+        </div>
+    
+        <div class="col-md-4 services">
+          <img src="images/service3.png" class="service-img">
+          <h4>De forma animada!</h4>
+          <p>Aqui voce encontra os melhores preços de toda sua região! Confia e vem com a gente!</p>
+        </div>
+        
+    </div>
+    <button type="button" class="btn btn-primary text-center">Todos os serviços!</button> 
+    
+</div>
+</section>
+
+<section id="about-us">
+<div class="container">
+  <h1 class="title text-center">PORQUE NOS ESCOLHER?</h1>
+  <div class="row">
+    <div class="col-md-6 about-us">
+      <p class="about-title">Por que somos diferentes!</p>
+      <ul>
+        <li> Acreditamos em fazer com honestidade! </li>
+        <li> Acreditamos em fazer com honestidade! </li>
+        <li> Acreditamos em fazer com honestidade! </li>
+        <li> Acreditamos em fazer com honestidade! </li>
+        <li> Acreditamos em fazer com honestidade! </li>
+
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <img src="images/network.png" class="img-fluid">
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section id="testimonials">
+<div class="container">
+  <h1 class="title text-center">O QUE OS CLIENTES DIZEM?</h1>
+  <div class="row">
+    <div class="col-md-5 testimonials">
+      <p>Aqui voce encontra os melhores preços de toda sua região! Confia e vem com a gente!</p>
+      <img src="images/user1.jpg">
+      <p class="user-details"><b>Angelina</b><br>Co fundadora de sla oq</p>
+    </div>
+    <div class="col-md-5 testimonials">
+      <p>Aqui voce encontra os melhores preços de toda sua região! Confia e vem com a gente!</p>
+      <img src="images/user2.jpg">
+      <p class="user-details"><b>Lucas Gaspar</b><br>Co fundadora de sla oq</p>
+    </div>
+    
+  </div>
+</div>
+</section>
+
+
+
+<section id="social-media">
+<div class="container text-center">
+  <p>NOS ENCONTRE NAS REDES SOCIAIS!</p>
+  <div class="social-icons">
+    <a href="#"><img src="images/facebook-icon.png"></a>
+    <a href="#"><img src="images/instagram-icon.png"></a>
+    <a href="#"><img src="images/linkedin-icon.png"></a>
+  </div>
+</div>
+</section>
+
+<section id="footer">
+<img src="images/wave2.png" class="footer-png">
+<div class="container">
+  <div class="row">
+      <div class="col-md-4 footer-box">
+        <img src="images/demo-logo.png">
+        <p>Aqui voce encontra os melhores preços de toda sua região! Confia e vem com a gente!</p>
+      </div>
+      <div class="col-md-4 footer-box">
+        <p><b>CONTATO</b></p>
+        <p><i class="fa-solid fa-map-pin"></i>Avenida Paulista,13</p>
+        <p><i class="fa-solid fa-phone"></i>+55 11 984997192</p>
+        <p><i class="fa-solid fa-envelope"></i>beloexemplo@gmail.com</p>
+      </div>
+      
+      <div class="col-md-4 footer-box">
+        <p><b>RECEBA NOSSOS EMAILS!!</b></p>
+        <input type="email" class="form-control" placeholder="Seu email">
+        <button type="button" class="btn btn-dark">Se inscreva</button>
+      </div>
+  </div>
+  <hr>
+  <p class="copyright"> Website Crfted by Easy Tutorials - https://www.youtube.com/watch?v=v0IgI8vYD_o&list=PL1MK7nFniZZYRV5sign661Pq--3DbF9Bn&index=1 </p>
+</div>
+
+</section>
+
+</body>
+
+</html>
